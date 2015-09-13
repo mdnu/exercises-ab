@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class abbeyThree_SumsInLoop {
+public class ab03_SumsInLoop {
 	
 	public long[] index_sum(int[] array1, int[] array2, int size) {
 		long[] array3 = new long[size];
@@ -11,7 +11,7 @@ public class abbeyThree_SumsInLoop {
 	}
 	
 	public static void main(String[] args) {
-		abbeyThree_SumsInLoop im = new abbeyThree_SumsInLoop();
+		ab03_SumsInLoop im = new ab03_SumsInLoop();
 		Scanner in = new Scanner(System.in);
 		System.out.println("data:");
 		int size = in.nextInt();

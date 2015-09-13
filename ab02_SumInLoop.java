@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class abbeyTwo_SumInLoop {
+public class ab02_SumInLoop {
 	
 	public int sum(int[] array, int size) {
 		int sum = 0;
@@ -11,7 +11,7 @@ public class abbeyTwo_SumInLoop {
 	}
 	
 	public static void main(String[] args) {
-		abbeyTwo_SumInLoop im = new abbeyTwo_SumInLoop();
+		ab02_SumInLoop im = new ab02_SumInLoop();
 		Scanner in = new Scanner(System.in);
 		System.out.println("input data:");
 		int size = in.nextInt();

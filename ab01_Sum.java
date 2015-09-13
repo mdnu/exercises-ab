@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class abbeyOne_Sum {
+public class ab01_Sum {
 	
 	public int sum(int a, int b){
 		return a+b;
