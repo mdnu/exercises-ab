@@ -8,7 +8,6 @@ class ab21_Triangles {
 		int size = in.nextInt();
 		int[] array = new int[size];
 		
-		
 		for (int i=0; i<size; i++) {
 			int[] data = new int[3];
 			for (int j=0; j<3; j++) {
