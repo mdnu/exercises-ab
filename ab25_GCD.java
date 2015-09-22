@@ -58,7 +58,7 @@ compute until c_n > 0 and c_n-1 - c_n < 0.
 Recall also that lcm(a,b) = a*b/gcd(a,b)
 
 our task: given two numbers, we form (x,y) which are the gcd
-and lcm respectivelu.
+and lcm respectively.
 
 sample input/output:
 input data:
