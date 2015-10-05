@@ -22,7 +22,6 @@ class ab17_ArrayCounters {
 		}
 		
 	}
-	
 }
 
 // task: given an array of length M with numbers

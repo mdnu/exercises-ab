@@ -20,13 +20,14 @@ class ab14_SumOfDigits {
 			int result = in.nextInt()*in.nextInt()+in.nextInt();
 			array[i] = sumOfDigits(result);
 		}
+		
 		System.out.println("answer:");
 		for (int i=0; i<size-1; i++) {
 			System.out.print(array[i] + " ");
-		} System.out.print(array[size - 1]);
+		} 
 		
+		System.out.print(array[size - 1]);
 	}
-	
 }
 
 // steps:

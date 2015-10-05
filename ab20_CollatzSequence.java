@@ -31,10 +31,10 @@ class ab20_CollatzSequence {
 			if (i<size-1) {
 				System.out.print(" ");
 			}
-		} System.out.print(array[size - 1]);
+		} 
 		
+		System.out.print(array[size - 1]);
 	}
-	
 }
 
 // suppose we select some initial number X,

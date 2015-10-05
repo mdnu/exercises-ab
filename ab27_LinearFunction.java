@@ -35,7 +35,6 @@ class ab27_LinearFunction {
 		}
 	
 	}
-	
 }
 
 /* we know that the standard linear equation is of the form

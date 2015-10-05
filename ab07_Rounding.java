@@ -15,10 +15,10 @@ class ab07_Rounding {
 		
 		for (int i=0; i<(size-1); i++) {
 			System.out.print(array[i] + " ");
-		} System.out.println(array[size-1]);
+		} 
 		
+		System.out.println(array[size-1]);
 	}
-	
 }
 
 // for each pair of integers, divide the first by the second,

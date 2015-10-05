@@ -34,7 +34,6 @@ class ab28_NeumannsRG {
 		}
 		
 	}
-	
 }
 
 

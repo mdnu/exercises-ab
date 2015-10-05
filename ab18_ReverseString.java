@@ -15,7 +15,6 @@ class ab18_ReverseString {
 		String input = in.nextLine();
 		System.out.print(reverseString(input));
 	}
-	
 }
 
 /* Input data will contain a single string of small 

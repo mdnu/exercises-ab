@@ -33,7 +33,6 @@ class ab10_MedianOfThree {
 		} System.out.print(array[size-1]);
 		
 	}
-	
 }
 
 // we are given a 3-tuple of integers, and are asked to find the median.

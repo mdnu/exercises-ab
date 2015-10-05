@@ -24,7 +24,6 @@ class ab25_GCD {
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		String[] array = new String[size];
-		
 		int a, b;
 		
 		for (int i=0; i<size; i++) {
@@ -42,7 +41,6 @@ class ab25_GCD {
 		}
 		
 	}
-	
 }
 
 /* Recall that for a,b natural numbers, gcd(a,b) = c iff

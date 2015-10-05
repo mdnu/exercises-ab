@@ -9,12 +9,16 @@ class ab24_ModuloTimeDifference {
 		long timestamp2 = 60*60*24*day2 + 60*60*hour2 + 60*min2 + sec2;
 		long difference = (timestamp1 < timestamp2) 
 		? (timestamp2-timestamp1) : (timestamp1-timestamp2);
+		
 		modTimeDiffs+=("("+(difference/(60*60*24))+" ");
 		difference%=(60*60*24);
+		
 		modTimeDiffs+=((difference/(60*60))+ " ");
 		difference%=(60*60);
+		
 		modTimeDiffs+=((difference/60)+" ");
 		difference%=(60);
+		
 		modTimeDiffs+=((difference)+") ");
 		return modTimeDiffs;
 	}
@@ -43,7 +47,6 @@ class ab24_ModuloTimeDifference {
 		}
 		
 	}
-	
 }
 
 // multiply mins by 60, hours by 60^2, and sum up. (1st task)

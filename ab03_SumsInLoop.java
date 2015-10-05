@@ -10,7 +10,6 @@ public class ab03_SumsInLoop {
 			array3[i] = array1[i]+array2[i];
 		}
 		return array3;
-		
 	}
 	
 	public static void main(String[] args) {
@@ -32,5 +31,4 @@ public class ab03_SumsInLoop {
 		}
 		
 	}
-	
 }

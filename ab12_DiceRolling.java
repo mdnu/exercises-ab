@@ -18,10 +18,10 @@ class ab12_DiceRolling {
 		
 		for (int i=0; i<size-1;i++) {
 			System.out.print(array[i]+" ");
-		} System.out.println(array[size - 1]);
+		} 
 		
+		System.out.println(array[size - 1]);
 	}
-	
 }
 
 // goal: a practice in simulating a dice-roll, with

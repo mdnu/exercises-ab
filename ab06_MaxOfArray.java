@@ -14,10 +14,10 @@ class ab06_MaxOfArray {
 			} else if (a > maxValue) {
 				maxValue = a;
 			}
-		} System.out.println(maxValue + " " + minValue);
+		} 
 		
+		System.out.println(maxValue + " " + minValue);
 	}
-	
 }
 
 // Introduce the 'linear search' algorithm, used for sorting.

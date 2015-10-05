@@ -29,10 +29,10 @@ class ab11_BodyMassIndex {
 		System.out.println("answer:");
 		for (int i=0; i<size-1;i++) {
 			System.out.print(array[i]+" ");
-		} System.out.print(array[size - 1]);
+		} 
 		
+		System.out.print(array[size - 1]);
 	}
-	
 }
 
 // BMI is defined as weight/(height)^2.

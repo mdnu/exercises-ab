@@ -15,7 +15,6 @@ class ab09_VowelCount {
 			count++;
 		}
 		return count;
-		
 	}
 	
 	public static void main(String[] args) {
@@ -31,10 +30,10 @@ class ab09_VowelCount {
 		
 		for (int i=0;i<size-1;i++) {
 			System.out.print(array[i]+" ");
-		} System.out.print(array[size-1]);
+		} 
 		
+		System.out.print(array[size-1]);
 	}
-	
 }
 
 // Introduction to string processing.

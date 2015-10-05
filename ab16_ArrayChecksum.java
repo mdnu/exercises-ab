@@ -10,15 +10,15 @@ class ab16_ArrayChecksum {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
-		
 		long result = 0;
+		
 		for (int i=0; i<size; i++) {
 			result += in.nextInt();
 			result = checkSumProduct(result);
 		}
+		
 		System.out.print(result);
 	}
-	
 }
 
 // checksums are small values calculated from big amounts of data

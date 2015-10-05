@@ -15,10 +15,10 @@ class ab08_FahrenheitToCelsius {
 		
 		for (int i=0; i<size-1; i++) {
 			System.out.print(array[i] + " ");
-		} System.out.print(array[size-1]);
+		} 
 		
+		System.out.print(array[size-1]);
 	}
-	
 }
 
 // Celsius water freezes at 0, and boils at 100.

@@ -26,10 +26,10 @@ class ab19_ArithmeticProgression {
 			if (i<size-1) {
 				System.out.print(" ");
 			}
-		} System.out.print(array[size - 1]);
+		} 
 		
+		System.out.print(array[size - 1]);
 	}
-	
 }
 
 // an arithmetic progression - a series of numbers for which

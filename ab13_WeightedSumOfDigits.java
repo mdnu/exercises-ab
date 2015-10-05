@@ -18,10 +18,10 @@ class ab13_WeightedSumOfDigits {
 		}
 		for (int i=0; i<size-1; i++) {
 			System.out.print(array[i] + " ");
-		} System.out.print(array[size - 1]);
+		} 
 		
+		System.out.print(array[size - 1]);	
 	}
-	
 }
 
 // this program resembles more complex algorithms for calculation CRC

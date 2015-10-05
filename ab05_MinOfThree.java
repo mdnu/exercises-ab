@@ -6,6 +6,7 @@ public class ab05_MinOfThree {
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		long[] array = new long[size];
+		
 		for (int i=0;i<size;i++) {
 			int a = in.nextInt();
 			int b = in.nextInt();
@@ -13,9 +14,11 @@ public class ab05_MinOfThree {
 			int c = in.nextInt();
 			array[i] = (array[i] < c) ? array[i] : c;
 		}
+		
 		for (int i=0;i<size-1;i++) {
 			System.out.print(array[i]+" ");
-		} System.out.print(array[size - 1]);
+		} 
+		
+		System.out.print(array[size - 1]);
 	}
-	
 }

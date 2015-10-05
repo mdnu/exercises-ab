@@ -20,11 +20,13 @@ class ab15_AverageOfArray {
 			}
 			array[i]=(sum/count);
 		}
+		
 		for (int i=0; i<size-1; i++) {
 			System.out.print(Math.round(array[i]) + " ");
-		} System.out.print(Math.round(array[size - 1]));
+		} 
+		
+		System.out.print(Math.round(array[size - 1]));
 	}
-	
 }
 
 // a program which calculates the mean of a set of values,

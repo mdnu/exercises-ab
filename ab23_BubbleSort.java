@@ -13,6 +13,7 @@ class ab23_BubbleSort {
 	
 	public static void bubbleSort(int[] array, int size) {
 		boolean continueSort = true;
+		
 		while (continueSort) {
 			continueSort = false;
 			for (int i=0; i<size-1; i++) {
@@ -26,7 +27,6 @@ class ab23_BubbleSort {
 				}
 			}
 		}
-		
 	}
 	
 	public static void main(String[] args) {
@@ -39,11 +39,8 @@ class ab23_BubbleSort {
 		}
 		
 		bubbleSort(array, size);
-		
 		System.out.print(pass+" "+swap);
-		
 	}
-	
 }
 
 // sorting is reordering according to some simple

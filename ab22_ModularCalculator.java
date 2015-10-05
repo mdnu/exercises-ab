@@ -28,12 +28,10 @@ class ab22_ModularCalculator {
 					break;
 				}
 			}
-			
 		}
 		
 		System.out.print(input);
 	}
-	
 }
 
 // setup:
