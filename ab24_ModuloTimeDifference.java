@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class ab24_ModuloTimeDifference {
 	
-	public String modTimeDiff(int day1, int hour1, int min1, 
+	public static String modTimeDiff(int day1, int hour1, int min1, 
 	int sec1, int day2, int hour2, int min2, int sec2) {
 		String modTimeDiffs = "";
 		long timestamp1 = 60*60*24*day1 + 60*60*hour1 + 60*min1 + sec1;
@@ -27,14 +27,13 @@ class ab24_ModuloTimeDifference {
 		int day1, hour1, min1, sec1,
 		day2, hour2, min2, sec2;
 		
-		ab24_ModuloTimeDifference im = new ab24_ModuloTimeDifference();
 		for (int i=0; i<size; i++) {
 			day1 = in.nextInt(); hour1 = in.nextInt(); 
 			min1 = in.nextInt(); sec1 = in.nextInt();
 			day2 = in.nextInt(); hour2 = in.nextInt(); 
 			min2 = in.nextInt(); sec2 = in.nextInt();
 			
-			array[i] = im.modTimeDiff(day1, hour1, min1, sec1, 
+			array[i] = modTimeDiff(day1, hour1, min1, sec1, 
 			day2, hour2, min2, sec2);
 			
 		}

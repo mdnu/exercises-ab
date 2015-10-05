@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class ab14_SumOfDigits {
 	
-	public int sumOfDigits(int result) {
+	public static int sumOfDigits(int result) {
 		int sum = 0;
 		while (result > 0) {
 			sum +=result%10;
@@ -16,10 +16,9 @@ class ab14_SumOfDigits {
 		int size = in.nextInt();
 		int[] array = new int[size];
 		
-		ab14_SumOfDigits im = new ab14_SumOfDigits();
 		for (int i=0; i<size; i++) {
 			int result = in.nextInt()*in.nextInt()+in.nextInt();
-			array[i] = im.sumOfDigits(result);
+			array[i] = sumOfDigits(result);
 		}
 		System.out.println("answer:");
 		for (int i=0; i<size-1; i++) {

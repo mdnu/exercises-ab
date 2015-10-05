@@ -10,22 +10,23 @@ class ab09_VowelCount {
 		int count = 0;
 		String newLine = line.toLowerCase();
 		Matcher m = p.matcher(newLine);
+		
 		while (m.find()) {
 			count++;
 		}
 		return count;
+		
 	}
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		int[] array = new int[size];
-		ab09_VowelCount im = new ab09_VowelCount();
 		in.nextLine();
 		
 		for (int i=0; i<size; i++) {
 			String line = in.nextLine();
-			array[i]=im.numVowels(line);
+			array[i]=numVowels(line);
 		}
 		
 		for (int i=0;i<size-1;i++) {

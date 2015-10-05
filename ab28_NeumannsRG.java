@@ -21,10 +21,9 @@ class ab28_NeumannsRG {
 		int size = in.nextInt();
 		int[] array = new int[size];
 		
-		ab28_NeumannsRG im = new ab28_NeumannsRG();
 		for (int i=0; i<size; i++) {
 			int input = in.nextInt(); 
-			array[i] = im.returnResult(input);	
+			array[i] = returnResult(input);	
 		}
 		
 		for (int i=0; i<size; i++) {
@@ -55,26 +54,20 @@ the algorithm we have is this:
 5. Continue generating values from step 2 onwards.
 
 example:
-5761                      - let it be the first number
-5761 * 5761 = 33189121    - raised to power 2
-33(1891)21 => 1891        - truncate to get the middle
+5761              - let it be the first number
+5761 * 5761 = 33189121  - raised to power 2
+33(1891)21 => 1891     - truncate to get the middle
 
-1891                      - it is the second number in the 
-							sequence
-1891 * 1891 = 3575881    - raised to power 2 
-						(add leading zero to get 8 digits)
-03(5758)81 => 5758         - truncate to get the middle
+1891              - it is the second number in the sequence
+1891 * 1891 = 3575881    - raised to power 2 (add leading zero to get 8 digits)
+03(5758)81 => 5758    - truncate to get the middle
 
-5758                      - it is the third number in 
-							the sequence 
-							(and so on...)
+5758    - it is the third number in the sequence (and so on...)
 
 sooner or later, each sequence will arrive at a loop:
 
-0001 -> 0000 -> 0000                   - came to loop after 
-										2 iterations
-4100 -> 8100 -> 6100 -> 2100 -> 4100   - came to loop after 
-										4 iterations
+0001 -> 0000 -> 0000        - came to loop after 2 iterations
+4100 -> 8100 -> 6100 -> 2100 -> 4100   - came to loop after 4 iterations
 
 (does this remind you of the Collatz conjecture?)
 

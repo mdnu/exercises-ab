@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class ab16_ArrayChecksum {
 	
-	public long checkSumProduct(long result) {
+	public static long checkSumProduct(long result) {
 		long newResult = (113*result)%10000007;
 		return newResult;
 	}
@@ -12,10 +12,9 @@ class ab16_ArrayChecksum {
 		int size = in.nextInt();
 		
 		long result = 0;
-		ab16_ArrayChecksum im = new ab16_ArrayChecksum();
 		for (int i=0; i<size; i++) {
 			result += in.nextInt();
-			result = im.checkSumProduct(result);
+			result = checkSumProduct(result);
 		}
 		System.out.print(result);
 	}

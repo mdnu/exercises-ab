@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class ab19_ArithmeticProgression {
 	
-	public int arithProg(int A, int B, int C) {
+	public static int arithProg(int A, int B, int C) {
 		int result = 0;
 		for (int i = 0; i<C; i++) {
 			result+=(A+(i*B));
@@ -14,12 +14,11 @@ class ab19_ArithmeticProgression {
 		int size = in.nextInt();
 		int[] array = new int[size];
 		
-		ab19_ArithmeticProgression im = new ab19_ArithmeticProgression();
 		for (int i = 0; i<size; i++) {
 			int A = in.nextInt();
 			int B = in.nextInt();
 			int C = in.nextInt();
-			array[i] = im.arithProg(A, B, C);
+			array[i] = arithProg(A, B, C);
 		}
 		
 		for (int i=0; i<size-1; i++) {

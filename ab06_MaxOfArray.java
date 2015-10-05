@@ -15,6 +15,7 @@ class ab06_MaxOfArray {
 				maxValue = a;
 			}
 		} System.out.println(maxValue + " " + minValue);
+		
 	}
 	
 }

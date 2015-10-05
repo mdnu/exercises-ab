@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class ab20_CollatzSequence {
 	
-	public int collatzCount(int input) {
+	public static int collatzCount(int input) {
 		int count = 0;
 		while (input > 1) {
 			if (input%2 == 0) {
@@ -21,10 +21,9 @@ class ab20_CollatzSequence {
 		int size = in.nextInt();
 		int[] array = new int[size];
 		
-		ab20_CollatzSequence im = new ab20_CollatzSequence();
 		for (int i=0; i<size; i++) {
 			int input = in.nextInt();
-			array[i] = im.collatzCount(input);
+			array[i] = collatzCount(input);
 		}
 		
 		for (int i=0; i<size-1; i++) {
@@ -61,3 +60,39 @@ class ab20_CollatzSequence {
 
 answer:
 1 17 118 */
+
+/* import java.util.ArrayList;
+import java.util.List;
+import java.util.Collections;
+
+class Problem14 {
+	
+	public long MAX = 1000000;
+	
+	public static void main(String[] args) {
+		
+		Problem14 im = new Problem14();
+		List<Integer> index = new ArrayList<Integer>();
+		
+		for (int i=0;i<=im.MAX+1;i++) {
+			int count = 0;
+			long work = i;
+			while (work >1) {
+				if (work<i) {
+					count+=index.get((int)work);
+					break;
+				} else if (work%2==0) {
+					work/=2;
+					count++;
+				} else {
+					work = (3*work)+1;
+					count++;
+				}
+			}
+			index.add(i, count);
+		}
+		
+		System.out.println(index.indexOf(Collections.max(index)));
+		
+	}
+} */

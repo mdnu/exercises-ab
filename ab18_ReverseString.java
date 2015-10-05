@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class ab18_ReverseString {
 	
-	public String reverseString(String input) {
+	public static String reverseString(String input) {
 		String output = "";
 		for (int i=input.length()-1; i>=0; i--) {
 			output+=input.charAt(i);
@@ -11,12 +11,9 @@ class ab18_ReverseString {
 	}
 	
 	public static void main(String[] args) {
-		
 		Scanner in = new Scanner(System.in);
 		String input = in.nextLine();
-		
-		ab18_ReverseString im = new ab18_ReverseString();
-		System.out.print(im.reverseString(input));
+		System.out.print(reverseString(input));
 	}
 	
 }
