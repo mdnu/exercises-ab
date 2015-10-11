@@ -1,6 +1,5 @@
 /* You will be given several Fibonacci numbers. 
-Your task is to tell their indices in the sequence.
- */
+Your task is to tell their indices in the sequence.*/
  
 import java.util.Scanner;
 import java.math.*;
