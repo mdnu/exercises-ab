@@ -31,9 +31,11 @@ class ab26_Fibonacci {
 		
 		for (int i = 0; i<size; i++) {
 			System.out.print(array[i]);
+			
 			if (i<size-1) {
 				System.out.print(" ");
 			}
+			
 		}
 
 	}
