@@ -34,21 +34,3 @@ class ab11_BodyMassIndex {
 		System.out.print(array[size - 1]);
 	}
 }
-
-// BMI is defined as weight/(height)^2.
-// for weight in kg, height in meters.
-// classes are:
-// underweight | BMI < 18.5
-// normal weight | 18.5 <= BMI < 25.0
-// overweight | 25.0 <= BMI < 30.0
-// obesity | 30.0 <= BMI
-
-// sample input/output:
-/* input data:
-3
-80 1.73
-55 1.58
-49 1.91
-
-answer:
-over normal under */

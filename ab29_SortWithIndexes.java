@@ -53,16 +53,3 @@ class ab29_SortWithIndexes {
 	}
 	
 }
-
-/* Learning about how to sort arrays.
-suppose we have an array 50 98 17 79 which after sorting 
-becomes 17 50 79 98. Now:
-
-17 was at 3-rd place initially
-50 was at 1-st place initially
-98 was at 2-nd place initially
-79 was at 4-th place initially
-
-so result is
-3 1 4 2
- */

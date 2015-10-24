@@ -36,21 +36,3 @@ class ab27_LinearFunction {
 	
 	}
 }
-
-/* we know that the standard linear equation is of the form
-y=ax+b (usually a is m, in either case, it's the slope, while b
-is the y-intercept).
-for example: (a,b)=(3,2) will yield y-values y=2,5,8,11... for x=0,1,2,3...
-
-task: determine a,b by two points, belonging to the function.
-we are given two pairs of values (x1,y1),(x2,y2) and we must find the function's
-values for (a,b).
-
-sample input/output:
-input data:
-2
-0 0 1 1
-1 0 0 1
-
-answer:
-(1 0) (-1 1) */

@@ -20,8 +20,3 @@ class ab08_FahrenheitToCelsius {
 		System.out.print(array[size-1]);
 	}
 }
-
-// Celsius water freezes at 0, and boils at 100.
-// Fahrenheit freezes at 32 and boils at 212.
-// input data: contains N+1 VALUES, N the first being
-// the amount of numbers to convert.

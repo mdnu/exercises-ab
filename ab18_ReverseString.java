@@ -16,8 +16,3 @@ class ab18_ReverseString {
 		System.out.print(reverseString(input));
 	}
 }
-
-/* Input data will contain a single string of small 
-latin letters and few spaces. Answer should contain 
-the string of the same length with the same characters 
-but in reverse order. */

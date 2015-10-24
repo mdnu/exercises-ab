@@ -28,9 +28,3 @@ class ab15_AverageOfArray {
 		System.out.print(Math.round(array[size - 1]));
 	}
 }
-
-// a program which calculates the mean of a set of values,
-// we are given several arrays, for each of which we find the mean.
-// each test case describes an array of integers, with '0' marking end.
-// though this 0 is not included in calculations.
-// answer for each must be rounded to the nearest integer.

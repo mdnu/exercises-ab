@@ -19,10 +19,3 @@ class ab06_MaxOfArray {
 		System.out.println(maxValue + " " + minValue);
 	}
 }
-
-// Introduce the 'linear search' algorithm, used for sorting.
-// for finding the extremas of a sequence of values:
-// algorithm: store 'current maximum' in a separate value,
-// then run through array, comparing each of its elements to
-// this variable. whenever the next value is greater, this
-// value becomes the new maximum. (simple enough).

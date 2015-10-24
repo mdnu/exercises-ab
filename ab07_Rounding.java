@@ -20,8 +20,3 @@ class ab07_Rounding {
 		System.out.println(array[size-1]);
 	}
 }
-
-// for each pair of integers, divide the first by the second,
-// then round the result to the nearest integer.
-// In cases when the result contains exactly 0.5 as a fractional part,
-// the value should be rounded up.

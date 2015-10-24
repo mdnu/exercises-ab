@@ -23,16 +23,3 @@ class ab17_ArrayCounters {
 		
 	}
 }
-
-// task: given an array of length M with numbers
-// ranging from 1 to N, for N<=20, we go through
-// the array, counting the frequency of each number
-// which appears.
-
-// example input/output:
-/* data input:
-10 3
-1 2 3 2 3 1 1 1 1 3
-
-answer:
-5 2 3 */

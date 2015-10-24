@@ -29,20 +29,3 @@ class ab21_Triangles {
 		
 	}
 }
-
-// suppose we have three line segments, with lengths
-// A, B, C. for our task, we are given n-many 3-tuples
-// and we are asked to output 1 if it's possible to form
-// a triangle out of them, or 0 otherwise.
-
-// recall law of cosines: c^2 = a^2 + b^2 - 2ab(cos(C)).
-// clearly, a triangle is possible iff a^2 + b^2 >=c^2.
-
-// sample input/output:
-/* data:
-2
-3 4 5
-1 2 4
-
-answer:
-1 0 */

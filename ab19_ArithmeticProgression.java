@@ -31,24 +31,3 @@ class ab19_ArithmeticProgression {
 		System.out.print(array[size - 1]);
 	}
 }
-
-// an arithmetic progression - a series of numbers for which
-// the difference between any two sequential values differ by
-// some constant. i.e. if we start at A, and the increment
-// difference is B, then our sequence is:
-// A, A+B, A+B+B, A+B+B+B, ..., A+(n+1)B for n-steps.
-
-// task: we are given n-many test cases.
-// for each of the n-lines, we are given A, B, C
-// where A is the S_0, B is the difference, and
-// C is the number of steps to calculate in the
-// sequence, i.e. S_0, ..., S_(C-1).
-
-// example input/output:
-/* data:
-2
-5 2 3
-3 0 10
-
-answer:
-21 30 */

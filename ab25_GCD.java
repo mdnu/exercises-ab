@@ -42,26 +42,3 @@ class ab25_GCD {
 		
 	}
 }
-
-/* Recall that for a,b natural numbers, gcd(a,b) = c iff
-c|a and c|b and for any d for which d|a and d|b, that d<c.
-Euclid's algorithm for the gcd:
-1. let c_0 = max(a,b) - min(a,b)
-2. let c_1 = min(a,b) - c_0
-3. let c_2 = c_0 - c_1
-...
-compute until c_n > 0 and c_n-1 - c_n < 0.
-
-Recall also that lcm(a,b) = a*b/gcd(a,b)
-
-our task: given two numbers, we form (x,y) which are the gcd
-and lcm respectivelu.
-
-sample input/output:
-input data:
-2
-2 3
-4 10
-
-answer:
-(1 6) (2 20) */

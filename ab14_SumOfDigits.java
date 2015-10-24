@@ -29,10 +29,3 @@ class ab14_SumOfDigits {
 		System.out.print(array[size - 1]);
 	}
 }
-
-// steps:
-// 1. first line contains N, the number of values to process.
-// 2. N lines will follow, describing the values for which the
-// sum of digits should be calculated - by 3 integers: A, B, C.
-// 3. for each case, take A*B + C, and calculate the sum of the
-// digits of the result.

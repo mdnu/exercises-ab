@@ -23,11 +23,3 @@ class ab13_WeightedSumOfDigits {
 		System.out.print(array[size - 1]);	
 	}
 }
-
-// this program resembles more complex algorithms for calculation CRC
-// 'CRC' i.e. 'cyclic redundancy check'., and other checksums and also
-// hash-functions on character strings.
-// here, we calculate the sum of digits, but multiplying each digit by
-// its position (counting from the left, starting from 1).
-// i.e. for '1776', wsd(1776) = 1*1 +7*2 + 7*3 + 6*4 = 60,
-// i.e. inner product of (1, 7, 7, 6) and (1, 2, 3, 4).

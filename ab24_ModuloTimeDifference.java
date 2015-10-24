@@ -48,27 +48,3 @@ class ab24_ModuloTimeDifference {
 		
 	}
 }
-
-// multiply mins by 60, hours by 60^2, and sum up. (1st task)
-//
-
-// suppose we are given two timestamps:
-// start: May 3, 17:08:30
-// end  : May 8, 12:54:15
-// we'd like to know how much time (in d/h/m/s) is spent travelling.
-
-// task: convert both timestamps to big numbers, representing seconds
-// from the beginning of the month (or year, or century). calculate the
-// difference, then convert this back into (d/h/m/s).
-// we will be given several pairs of timestamps. we suppose that both
-// dates in the pair are always in the same month, s.t. only the day
-// is given. we calculate the difference btwn timestamps in each pair.
-
-/* input data:
-3
-1 0 0 0 2 3 4 5
-5 3 23 22 24 4 20 45
-8 4 6 47 9 11 51 13
-
-answer:
-(1 3 4 5) (19 0 57 23) (1 7 44 26) */

@@ -34,7 +34,3 @@ class ab10_MedianOfThree {
 		
 	}
 }
-
-// we are given a 3-tuple of integers, and are asked to find the median.
-// this exercise is used as part of the 'quicksort' algorithm
-// we shall see later.
