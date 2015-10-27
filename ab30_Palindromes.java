@@ -46,5 +46,4 @@ class ab30_Palindromes {
 		}
 		
 	}
-	
 }

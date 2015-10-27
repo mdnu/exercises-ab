@@ -30,6 +30,6 @@ class ab32_BicycleRace {
 				System.out.print(" ");
 			}
 		}
+		
 	}
-	
 }
