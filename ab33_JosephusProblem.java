@@ -1,3 +1,7 @@
+/* Given N-many people and a constant step K,
+we must find the position (from 1 to N) of
+the person who survives. */
+
 import java.util.Scanner;
 
 class ab33_JosephusProblem {
@@ -20,7 +24,3 @@ class ab33_JosephusProblem {
 	}
 	
 }
-
-// Given N-many people and a constant step K,
-// we must find the position (from 1 to N) of
-// the person who survives.
