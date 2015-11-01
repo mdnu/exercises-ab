@@ -22,5 +22,4 @@ class ab33_JosephusProblem {
 		N = in.nextInt(); K = in.nextInt();
 		System.out.print(dynamicSol(N,K));
 	}
-	
 }
