@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 class ab27_LinearFunction {
 	
-	private static int x1,y1,x2,y2,a,b;
+	private static int X1,Y1,X2,Y2,A,B;
 	
-	public static int getA(int x1, int y1, int x2, int y2) {
-		return (y1-y2)/(x1-x2);
+	public static int getA(int X1, int Y1, int X2, int Y2) {
+		return (Y1-Y2)/(X1-X2);
 	}
 	
-	public static int getB(int a, int y1, int x1) {
-		return (y1 -(a*x1));
+	public static int getB(int A, int Y1, int X1) {
+		return (Y1 -(A*X1));
 	}
 	
 	public static void main(String[] args) {
@@ -18,13 +18,13 @@ class ab27_LinearFunction {
 		int[][] array = new int[size][size];
 		
 		for (int i=0; i<size; i++) {
-			x1=in.nextInt(); y1=in.nextInt();
-			x2=in.nextInt(); y2=in.nextInt();
+			X1=in.nextInt(); Y1=in.nextInt();
+			X2=in.nextInt(); Y2=in.nextInt();
 			
-			int a = getA(x1,y1,x2,y2);
-			int b = getB(a,y1,x1);
-			array[i][0]=a;
-			array[i][1]=b;
+			int A = getA(X1,Y1,X2,Y2);
+			int B = getB(A,Y1,X1);
+			array[i][0]=A;
+			array[i][1]=B;
 		}
 		
 		for (int i=0; i<size; i++) {

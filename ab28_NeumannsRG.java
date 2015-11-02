@@ -32,6 +32,6 @@ class ab28_NeumannsRG {
 				System.out.print(" ");
 			}
 		}
-		
+	
 	}
 }

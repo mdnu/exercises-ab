@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 class ab29_SortWithIndexes {
 	
-	public static int pass = 0;
-	public static int swap = 0;
+	public static int PASS = 0;
+	public static int SWAP = 0;
 	
 	private static void swap(int[] array, int i, int j) {
 		int temp = array[i];
@@ -19,11 +19,11 @@ class ab29_SortWithIndexes {
 			for (int i=0; i<size-1; i++) {
 				if (array[i]>array[i+1]) {
 					swap(array, i, i+1);
-					swap++;
+					SWAP++;
 					continueSort = true;
 				}
 				if (i == size-2) {
-					pass++;
+					PASS++;
 				}
 			}
 		}

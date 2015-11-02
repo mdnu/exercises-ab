@@ -3,8 +3,8 @@ import java.util.regex.*;
 
 class ab09_VowelCount {
 	
-	static String regex = "[aeiouy]";
-	static Pattern p = Pattern.compile(regex,Pattern.CASE_INSENSITIVE);
+	public static String regex = "[aeiouy]";
+	public static Pattern p = Pattern.compile(regex,Pattern.CASE_INSENSITIVE);
 	
 	public static int numVowels(String line) {
 		int count = 0;

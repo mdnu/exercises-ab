@@ -4,39 +4,39 @@ import java.util.List;
 
 class ab34_BubbleInArray {
 	
-	public static int swap = 0;
-	public static int size = 0;
-	public static long result = 0;
-	public static List<Integer> array = new ArrayList<Integer>();
+	public static int SWAP = 0;
+	public static int SIZE = 0;
+	public static long RESULT = 0;
+	public static List<Integer> ARRAY = new ArrayList<Integer>();
 	
-	private static void swap(List<Integer> array, int i, int j) {
-		int temp = array.get(i);
-		array.set(i, array.get(j));
-		array.set(j, temp);
+	private static void SWAP(List<Integer> ARRAY, int i, int j) {
+		int temp = ARRAY.get(i);
+		ARRAY.set(i, ARRAY.get(j));
+		ARRAY.set(j, temp);
 	}
 	
-	public static void bubbleSort(List<Integer> array, int size) {
+	public static void bubbleSort(List<Integer> ARRAY, int SIZE) {
 		boolean continueSort = true;
 			
-		for (int i=0; i<size; i++) {
-			if (array.get(i) > array.get(i+1)) {
-				swap(array, i, i+1);
-				swap++;
+		for (int i=0; i<SIZE; i++) {
+			if (ARRAY.get(i) > ARRAY.get(i+1)) {
+				SWAP(ARRAY, i, i+1);
+				SWAP++;
 			}
 		}
 	}
 	
-	public static long checkSumProduct(long result) {
-		long newResult = (113*result)%10000007;
+	public static long checkSumProduct(long RESULT) {
+		long newResult = (113*RESULT)%10000007;
 		return newResult;
 	}
 	
-	public static long checkSum(List<Integer> array) {
-		for (int i=0; i<size+1; i++) {
-			result += array.get(i);
-			result = checkSumProduct(result);
+	public static long checkSum(List<Integer> ARRAY) {
+		for (int i=0; i<SIZE+1; i++) {
+			RESULT += ARRAY.get(i);
+			RESULT = checkSumProduct(RESULT);
 		}
-		return result;
+		return RESULT;
 	}
 	
 	public static void main(String[] args) {
@@ -45,15 +45,15 @@ class ab34_BubbleInArray {
 		while (check) {
 			int number = in.nextInt();
 			if (number != -1) {
-				array.add(number);
+				ARRAY.add(number);
 			} else {
-				size = array.size()-1;
+				SIZE = ARRAY.size()-1;
 				break;
 			}
 		}
 		
-		bubbleSort(array, size);
-		long checkSumResult = checkSum(array);
-		System.out.println(swap+" "+checkSumResult);
+		bubbleSort(ARRAY, SIZE);
+		long checkSumResult = checkSum(ARRAY);
+		System.out.println(SWAP+" "+checkSumResult);
 	}
 }

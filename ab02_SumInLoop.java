@@ -21,6 +21,5 @@ public class ab02_SumInLoop {
 		}
 		
 		System.out.println(sum(array,size));
-	}
-	
+	}	
 }

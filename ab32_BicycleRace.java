@@ -3,13 +3,13 @@ import java.text.DecimalFormat;
 
 class ab32_BicycleRace {
 	
-	public static DecimalFormat dec = new DecimalFormat("#.########");
+	public static DecimalFormat DEC = new DecimalFormat("#.########");
 	
 	public static String meetPointDist(double dist, int speedA, int speedB) {
 		int distCovered = speedA+speedB;
 		double time = dist/distCovered;
 		double meetPointDist = speedA*time;
-		return dec.format(meetPointDist);
+		return DEC.format(meetPointDist);
 	}
 	
 	public static void main(String[] args) {

@@ -4,8 +4,8 @@ class ab17_ArrayCounters {
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		int M = in.nextInt(); // size
-		int N = in.nextInt(); // range
+		int M = in.nextInt();
+		int N = in.nextInt();
 		
 		int[] array = new int[N];
 		
