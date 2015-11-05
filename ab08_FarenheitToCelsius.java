@@ -18,5 +18,4 @@ class ab08_FarenheitToCelsius {
 		} System.out.print(array[size-1]);
 		
 	}
-	
 }
