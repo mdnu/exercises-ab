@@ -20,15 +20,15 @@ class ab11_BodyMassIndex {
 		int size = in.nextInt();
 		String[] array = new String[size];
 		
-		for (int i=0; i<size; i++) {
+		for (int i = 0; i < size; i++) {
 			double weight = in.nextDouble();
 			double height = in.nextDouble();
-			double bmi = weight/(height*height);
+			double bmi = weight / (height*height);
 			array[i] = bmiClass(bmi);
 		}
 		System.out.println("answer:");
-		for (int i=0; i<size-1;i++) {
-			System.out.print(array[i]+" ");
+		for (int i = 0; i < size-1; i++) {
+			System.out.print(array[i] + " ");
 		} 
 		
 		System.out.print(array[size - 1]);

@@ -23,13 +23,13 @@ class ab09_VowelCount {
 		int[] array = new int[size];
 		in.nextLine();
 		
-		for (int i=0; i<size; i++) {
+		for (int i = 0; i < size; i++) {
 			String line = in.nextLine();
-			array[i]=numVowels(line);
+			array[i] = numVowels(line);
 		}
 		
-		for (int i=0;i<size-1;i++) {
-			System.out.print(array[i]+" ");
+		for (int i = 0; i < size-1; i++) {
+			System.out.print(array[i] + " ");
 		} 
 		
 		System.out.print(array[size-1]);

@@ -21,7 +21,7 @@ class ab35_RotateString {
 	}
 	
 	public static void reverse(char[] s, int start, int end) {
-		for (int i = start, j = end; i<j; i++, j--) {
+		for (int i = start, j = end; i < j; i++, j--) {
 			char temp = s[j];
 			s[j] = s[i];
 			s[i] = temp;
@@ -33,7 +33,7 @@ class ab35_RotateString {
 		int size = in.nextInt();
 		String[] storage = new String[size];
 		
-		for (int i=0; i<size; i++) {
+		for (int i = 0; i < size; i++) {
 			int K = in.nextInt();
 			String input = in.next();
 			char[] s = input.toCharArray();
@@ -41,7 +41,7 @@ class ab35_RotateString {
 			storage[i] = output;
 		}
 		
-		for (int i=0; i<size; i++) {
+		for (int i = 0; i < size; i++) {
 			System.out.print(storage[i]);
 			if (i < size-1) {
 				System.out.print(" ");

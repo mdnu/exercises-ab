@@ -9,10 +9,10 @@ class ab33_JosephusProblem {
 	public static int N, K;
 	
 	public static int dynamicSol(int N, int K) {
-		if (N==1) {
+		if (N == 1) {
 			return 1;
 		} else {
-			int solution = ((dynamicSol(N-1,K)+(K-1))%N) + 1;
+			int solution = ((dynamicSol(N - 1, K)+(K - 1)) % N) + 1;
 			return solution;
 		}
 	}
@@ -20,6 +20,6 @@ class ab33_JosephusProblem {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		N = in.nextInt(); K = in.nextInt();
-		System.out.print(dynamicSol(N,K));
+		System.out.print(dynamicSol(N, K));
 	}
 }

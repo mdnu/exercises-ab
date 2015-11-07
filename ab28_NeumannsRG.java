@@ -10,7 +10,7 @@ class ab28_NeumannsRG {
 		Set<Integer> set = new HashSet<Integer>();
 		do {
 			set.add(initial);
-			initial = (initial*initial)/100 % 10000;
+			initial = (initial * initial) / 100 % 10000;
 			count++;
 		} while (!set.contains(initial));
 		return count;
@@ -21,14 +21,14 @@ class ab28_NeumannsRG {
 		int size = in.nextInt();
 		int[] array = new int[size];
 		
-		for (int i=0; i<size; i++) {
+		for (int i = 0; i < size; i++) {
 			int input = in.nextInt(); 
 			array[i] = returnResult(input);	
 		}
 		
-		for (int i=0; i<size; i++) {
+		for (int i = 0; i < size; i++) {
 			System.out.print(array[i]);
-			if (i<size-1) {
+			if (i < size-1) {
 				System.out.print(" ");
 			}
 		}

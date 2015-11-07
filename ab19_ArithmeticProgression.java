@@ -4,8 +4,8 @@ class ab19_ArithmeticProgression {
 	
 	public static int arithProg(int A, int B, int C) {
 		int result = 0;
-		for (int i = 0; i<C; i++) {
-			result+=(A+(i*B));
+		for (int i = 0; i < C; i++) {
+			result += (A + (i * B));
 		} return result;
 	}
 	
@@ -21,9 +21,9 @@ class ab19_ArithmeticProgression {
 			array[i] = arithProg(A, B, C);
 		}
 		
-		for (int i=0; i<size-1; i++) {
+		for (int i = 0; i < size-1; i++) {
 			System.out.print(array[i]);
-			if (i<size-1) {
+			if (i < size-1) {
 				System.out.print(" ");
 			}
 		} 

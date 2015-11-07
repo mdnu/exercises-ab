@@ -18,21 +18,21 @@ class ab34_BubbleInArray {
 	public static void bubbleSort(List<Integer> ARRAY, int SIZE) {
 		boolean continueSort = true;
 			
-		for (int i=0; i<SIZE; i++) {
-			if (ARRAY.get(i) > ARRAY.get(i+1)) {
-				SWAP(ARRAY, i, i+1);
+		for (int i = 0; i < SIZE; i++) {
+			if (ARRAY.get(i) > ARRAY.get(i + 1)) {
+				SWAP(ARRAY, i, i + 1);
 				SWAP++;
 			}
 		}
 	}
 	
 	public static long checkSumProduct(long RESULT) {
-		long newResult = (113*RESULT)%10000007;
+		long newResult = (113 * RESULT) % 10000007;
 		return newResult;
 	}
 	
 	public static long checkSum(List<Integer> ARRAY) {
-		for (int i=0; i<SIZE+1; i++) {
+		for (int i = 0; i < SIZE+1; i++) {
 			RESULT += ARRAY.get(i);
 			RESULT = checkSumProduct(RESULT);
 		}
@@ -54,6 +54,6 @@ class ab34_BubbleInArray {
 		
 		bubbleSort(ARRAY, SIZE);
 		long checkSumResult = checkSum(ARRAY);
-		System.out.println(SWAP+" "+checkSumResult);
+		System.out.println(SWAP + " " + checkSumResult);
 	}
 }

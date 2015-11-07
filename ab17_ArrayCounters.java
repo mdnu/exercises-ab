@@ -9,14 +9,14 @@ class ab17_ArrayCounters {
 		
 		int[] array = new int[N];
 		
-		for (int i=0; i<M; i++) {
+		for (int i = 0; i < M; i++) {
 			int next = in.nextInt();
-			array[next-1]++;
+			array[next - 1]++;
 		}
 		
-		for (int i=0; i<N; i++) {
+		for (int i = 0; i < N; i++) {
 			System.out.print(array[i]);
-			if (i<N-1) {
+			if (i < N-1) {
 				System.out.print(" ");
 			}
 		}

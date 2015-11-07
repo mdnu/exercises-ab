@@ -10,16 +10,16 @@ class ab24_ModuloTimeDifference {
 		long difference = (timestamp1 < timestamp2) 
 		? (timestamp2-timestamp1) : (timestamp1-timestamp2);
 		
-		modTimeDiffs+=("("+(difference/(60*60*24))+" ");
-		difference%=(60*60*24);
+		modTimeDiffs += ("(" + (difference / (60 * 60 * 24)) + " ");
+		difference %= (60 * 60 * 24);
 		
-		modTimeDiffs+=((difference/(60*60))+ " ");
-		difference%=(60*60);
+		modTimeDiffs += ((difference / (60 * 60)) + " ");
+		difference %= (60 * 60);
 		
-		modTimeDiffs+=((difference/60)+" ");
-		difference%=(60);
+		modTimeDiffs += ((difference / 60) + " ");
+		difference %= (60);
 		
-		modTimeDiffs+=((difference)+") ");
+		modTimeDiffs += ((difference) + ") ");
 		return modTimeDiffs;
 	}
 	
@@ -31,7 +31,7 @@ class ab24_ModuloTimeDifference {
 		int day1, hour1, min1, sec1,
 		day2, hour2, min2, sec2;
 		
-		for (int i=0; i<size; i++) {
+		for (int i = 0; i < size; i++) {
 			day1 = in.nextInt(); hour1 = in.nextInt(); 
 			min1 = in.nextInt(); sec1 = in.nextInt();
 			day2 = in.nextInt(); hour2 = in.nextInt(); 
@@ -42,7 +42,7 @@ class ab24_ModuloTimeDifference {
 			
 		}
 		
-		for (int i=0; i<size; i++) {
+		for (int i = 0; i < size; i++) {
 			System.out.print(array[i]);
 		}
 		

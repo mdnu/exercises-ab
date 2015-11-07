@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ab01_Sum {
 	
 	public static int sum(int a, int b){
-		return a+b;
+		return a + b;
 	}
 	
 	public static void main(String[] arg) {
@@ -13,7 +13,7 @@ public class ab01_Sum {
 		System.out.println("input data:");
 		a = in.nextInt(); b = in.nextInt();
 		
-		System.out.println(sum(a,b));
+		System.out.println(sum(a, b));
 		
 	}
 }

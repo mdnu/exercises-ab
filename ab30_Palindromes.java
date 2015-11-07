@@ -7,8 +7,8 @@ class ab30_Palindromes {
 	public static String reverseString(String input) {
 		int inputLength = input.length();
 		String output = "";
-		for (int i=inputLength-1; i>=0; i--) {
-			output+=input.charAt(i);
+		for (int i = inputLength - 1; i >= 0; i--) {
+			output += input.charAt(i);
 		}
 		return output;
 	}
@@ -32,15 +32,15 @@ class ab30_Palindromes {
 		String[] array = new String[size];
 		in.nextLine();
 		
-		for (int i=0; i<size; i++) {
+		for (int i = 0; i < size; i++) {
 			String rawInput = in.nextLine();
 			String input = modInput(rawInput);
-			array[i]=(palindromeCheck(input, reverseString(input)));
+			array[i] = (palindromeCheck(input, reverseString(input)));
 		}
 		
-		for (int i=0; i<size; i++) {
+		for (int i = 0; i < size; i++) {
 			System.out.print(array[i]);
-			if (i<size-1) {
+			if (i < size-1) {
 				System.out.print(" ");
 			}
 		}

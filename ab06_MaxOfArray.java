@@ -7,7 +7,7 @@ class ab06_MaxOfArray {
 		int minValue = Integer.MAX_VALUE;
 		int maxValue = Integer.MIN_VALUE;
 			
-		for (int i=0; i<300; i++) {
+		for (int i = 0; i<300; i++) {
 			int a = in.nextInt();
 			if (a < minValue) {
 				minValue = a;

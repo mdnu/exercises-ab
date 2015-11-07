@@ -22,14 +22,14 @@ class ab10_MedianOfThree {
 		int size = in.nextInt(), median;
 		int[] array = new int[size];
 
-		for (int i=0; i<size; i++) {
+		for (int i = 0; i < size; i++) {
 			int a = in.nextInt();
 			int b = in.nextInt();
 			int c = in.nextInt();
 			array[i] = medianOfTriple(a, b, c);
 		}
-		for (int i=0; i<size-1;i++) {
-			System.out.print(array[i]+ " ");
+		for (int i=0; i < size-1; i++) {
+			System.out.print(array[i] + " ");
 		} System.out.print(array[size-1]);
 		
 	}

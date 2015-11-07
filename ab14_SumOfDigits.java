@@ -5,8 +5,8 @@ class ab14_SumOfDigits {
 	public static int sumOfDigits(int result) {
 		int sum = 0;
 		while (result > 0) {
-			sum +=result%10;
-			result/=10;
+			sum += result % 10;
+			result /= 10;
 		} return sum;
 	}
 	
@@ -16,13 +16,13 @@ class ab14_SumOfDigits {
 		int size = in.nextInt();
 		int[] array = new int[size];
 		
-		for (int i=0; i<size; i++) {
-			int result = in.nextInt()*in.nextInt()+in.nextInt();
+		for (int i = 0; i < size; i++) {
+			int result = in.nextInt() * in.nextInt() + in.nextInt();
 			array[i] = sumOfDigits(result);
 		}
 		
 		System.out.println("answer:");
-		for (int i=0; i<size-1; i++) {
+		for (int i = 0; i < size-1; i++) {
 			System.out.print(array[i] + " ");
 		} 
 		

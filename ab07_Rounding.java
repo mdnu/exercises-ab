@@ -7,13 +7,13 @@ class ab07_Rounding {
 		int size = in.nextInt();
 		long[] array = new long[size];
 		
-		for (int i=0; i<size; i++) {
+		for (int i = 0; i < size; i++) {
 			int a = in.nextInt();
 			int b = in.nextInt();
-			array[i] = (int)Math.round((((double) a)/(double) b));
+			array[i] = (int)Math.round( ((double) a) / ((double) b) );
 		}
 		
-		for (int i=0; i<(size-1); i++) {
+		for (int i = 0; i < (size-1); i++) {
 			System.out.print(array[i] + " ");
 		} 
 		
