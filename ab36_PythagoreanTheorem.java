@@ -27,7 +27,5 @@ class ab36_PythagoreanTheorem {
 				System.out.print(" ");
 			}
 		}
-		
 	}
-	
 }
