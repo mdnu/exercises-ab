@@ -29,8 +29,6 @@ class ab37_SquareRoot {
 			if (i < size) {
 				System.out.print(" ");
 			}
-		}
-		
-	}
-	
+		}		
+	}	
 }
