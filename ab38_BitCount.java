@@ -30,7 +30,5 @@ class ab38_BitCount {
 				System.out.print(" ");
 			}
 		}
-		
 	}
-	
 }
