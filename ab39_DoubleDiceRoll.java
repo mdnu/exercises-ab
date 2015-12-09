@@ -25,7 +25,5 @@ class ab39_DoubleDiceRoll {
 				System.out.print(" ");
 			}
 		}
-		
 	}
-	
 }
