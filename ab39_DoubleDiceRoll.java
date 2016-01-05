@@ -3,7 +3,6 @@ import java.util.Scanner;
 class ab39_DoubleDiceRoll {
 	
 	public static int A, B;
-	
 	public static int DiceRoll(int A, int B) {
 		int C = 2 + (A % 6) + (B % 6);
 		return C;
