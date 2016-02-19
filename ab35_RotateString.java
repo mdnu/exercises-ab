@@ -7,14 +7,14 @@ class ab35_RotateString {
 			return s;
 		} else {
 			if (K>0) {
-				reverse(s,0,s.length - 1);
-				reverse(s,s.length - K,s.length - 1);
-				reverse(s,0,s.length - K - 1);
+				reverse(s, 0, s.length - 1);
+				reverse(s, s.length - K, s.length - 1);
+				reverse(s, 0, s.length - K - 1);
 			} else if (K<0) {
 				K = -K;
-				reverse(s,0,s.length - 1);
-				reverse(s,0,K - 1);
-				reverse(s,K,s.length - 1);
+				reverse(s, 0, s.length - 1);
+				reverse(s, 0, K - 1);
+				reverse(s, K, s.length - 1);
 			}
 			return s;
 		}
