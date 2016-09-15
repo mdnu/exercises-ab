@@ -1,7 +1,17 @@
+/**
+ * http://www.codeabbey.com/index/task_view/body-mass-index
+ * input data:
+ * 3
+ * 80 1.73
+ * 55 1.58
+ * 49 1.91
+ * answer:
+ * over normal under
+ */
+
 import java.util.Scanner;
 
 class ab11_BodyMassIndex {
-	
 	public static String bmiClass(double bmi) {
 		if (bmi < 18.5) {
 			return "under";
@@ -15,6 +25,7 @@ class ab11_BodyMassIndex {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		System.out.println("input data:");
 		int size = in.nextInt();
@@ -27,10 +38,10 @@ class ab11_BodyMassIndex {
 			array[i] = bmiClass(bmi);
 		}
 		System.out.println("answer:");
+		
 		for (int i = 0; i < size-1; i++) {
 			System.out.print(array[i] + " ");
 		} 
-		
 		System.out.print(array[size - 1]);
 	}
 }
