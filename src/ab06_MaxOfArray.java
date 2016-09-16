@@ -1,4 +1,5 @@
 /**
+ * http://www.codeabbey.com/index/task_view/maximum-of-array
  * Linear search algorithm.
  * Input data will give you exactly 300 numbers in a single line.
  * Answer should contain maximum and minimum of these values, separated by space.

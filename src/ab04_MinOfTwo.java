@@ -1,4 +1,5 @@
 /**
+ * http://www.codeabbey.com/index/task_view/min-of-two
  * Of two numbers, please, select one with minimum value. 
  * Here are several pairs of numbers for thorough testing.
  * Input data will contain number of test-cases in the first line.

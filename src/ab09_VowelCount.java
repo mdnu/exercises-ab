@@ -1,4 +1,5 @@
 /**
+ * http://www.codeabbey.com/index/task_view/vowel-count
  * This is a simple problem to get introduced to string processing. 
  * We will be given several lines of text - and for each of them we want to 
  * know the number of vowels (i.e. letters a, o, u, i, e, y). Note: that y is 

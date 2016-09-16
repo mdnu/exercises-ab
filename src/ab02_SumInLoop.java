@@ -1,4 +1,5 @@
 /**
+ * http://www.codeabbey.com/index/task_view/sum-in-loop
  * Input data has the following format:
  * first line contains N - amount of values to sum;
  * second line contains N values themselves.

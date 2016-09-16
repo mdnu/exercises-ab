@@ -1,4 +1,5 @@
 /**
+ * http://www.codeabbey.com/index/task_view/min-of-three
  * Several triplets of numbers are given to you. 
  * Your task is to select minimum among each of triplets.
  * Input data will contain in the first line the number of triplets to follow.

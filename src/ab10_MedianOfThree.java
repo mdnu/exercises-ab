@@ -1,4 +1,5 @@
 /**
+ * http://www.codeabbey.com/index/task_view/median-of-three
  * You will be again given triplets of numbers, but now the middle of them should be chosen 
  * data:
  * 3
