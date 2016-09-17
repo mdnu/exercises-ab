@@ -1,7 +1,15 @@
+/**
+ * http://www.codeabbey.com/index/task_view/collatz-sequence
+ * input data:
+ * 3
+ * 2 15 97
+ * answer:
+ * 1 17 118
+ */
+
 import java.util.Scanner;
 
 class ab20_CollatzSequence {
-	
 	public static int collatzCount(int input) {
 		int count = 0;
 		while (input > 1) {
@@ -17,6 +25,7 @@ class ab20_CollatzSequence {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		int[] array = new int[size];
@@ -32,7 +41,6 @@ class ab20_CollatzSequence {
 				System.out.print(" ");
 			}
 		} 
-		
 		System.out.print(array[size - 1]);
 	}
 }

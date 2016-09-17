@@ -1,7 +1,16 @@
+/**
+ * http://www.codeabbey.com/index/task_view/arithmetic-progression
+ * data:
+ * 2
+ * 5 2 3
+ * 3 0 10
+ * answer:
+ * 21 30
+ */
+
 import java.util.Scanner;
 
 class ab19_ArithmeticProgression {
-	
 	public static int arithProg(int A, int B, int C) {
 		int result = 0;
 		for (int i = 0; i < C; i++) {
@@ -10,14 +19,13 @@ class ab19_ArithmeticProgression {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		int[] array = new int[size];
 		
 		for (int i = 0; i<size; i++) {
-			int A = in.nextInt();
-			int B = in.nextInt();
-			int C = in.nextInt();
+			int A = in.nextInt(), B = in.nextInt(), C = in.nextInt();
 			array[i] = arithProg(A, B, C);
 		}
 		
@@ -27,7 +35,6 @@ class ab19_ArithmeticProgression {
 				System.out.print(" ");
 			}
 		} 
-		
 		System.out.print(array[size - 1]);
 	}
 }

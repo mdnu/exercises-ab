@@ -1,9 +1,19 @@
+/**
+ * http://www.codeabbey.com/index/task_view/triangles
+ * data:
+ * 2
+ * 3 4 5
+ * 1 2 4
+ * answer:
+ * 1 0
+ */
+
 import java.util.Scanner;
 import java.util.Arrays;
 
 class ab21_Triangles {
-	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		int[] array = new int[size];
@@ -26,6 +36,5 @@ class ab21_Triangles {
 				System.out.print(" ");
 			}
 		}
-		
 	}
 }
