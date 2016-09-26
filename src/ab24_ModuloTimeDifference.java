@@ -1,7 +1,17 @@
+/**
+ * http://www.codeabbey.com/index/task_view/modulo-and-time-difference
+ * input data:
+ * 3
+ * 1 0 0 0 2 3 4 5
+ * 5 3 23 22 24 4 20 45
+ * 8 4 6 47 9 11 51 13
+ * answer:
+ * (1 3 4 5) (19 0 57 23) (1 7 44 26)
+ */
+
 import java.util.Scanner;
 
-class ab24_ModuloTimeDifference {
-	
+public class ab24_ModuloTimeDifference {
 	public static String modTimeDiff(int day1, int hour1, int min1, 
 	int sec1, int day2, int hour2, int min2, int sec2) {
 		String modTimeDiffs = "";
@@ -24,6 +34,7 @@ class ab24_ModuloTimeDifference {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		String[] array = new String[size];
@@ -39,12 +50,10 @@ class ab24_ModuloTimeDifference {
 			
 			array[i] = modTimeDiff(day1, hour1, min1, sec1, 
 			day2, hour2, min2, sec2);
-			
 		}
 		
 		for (int i = 0; i < size; i++) {
 			System.out.print(array[i]);
 		}
-		
 	}
 }

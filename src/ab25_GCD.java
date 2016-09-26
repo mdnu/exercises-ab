@@ -1,7 +1,15 @@
+/**
+ * http://www.codeabbey.com/index/task_view/greatest-common-divisor
+ * input data:
+ * 2
+ * 2 3
+ * 4 10answer:
+ * (1 6) (2 20)
+ */
+
 import java.util.Scanner;
 
-class ab25_GCD {
-	
+public class ab25_GCD {
 	public static int gcd(int a, int b) {
 		while (a != 0 && b != 0) {
 			if (a > b) {
@@ -10,6 +18,7 @@ class ab25_GCD {
 				b %= a;
 			}
 		}
+		
 		int gcd = (a != 0) ? a : b;
 		return gcd;
 	}
@@ -21,6 +30,7 @@ class ab25_GCD {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		String[] array = new String[size];
@@ -39,6 +49,5 @@ class ab25_GCD {
 				System.out.print(" ");
 			}
 		}
-		
 	}
 }

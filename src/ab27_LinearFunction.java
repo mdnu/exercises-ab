@@ -1,7 +1,16 @@
+/**
+ * http://www.codeabbey.com/index/task_view/linear-function
+ * input data:
+ * 2
+ * 0 0 1 1
+ * 1 0 0 1
+ * answer:
+ * (1 0) (-1 1)
+ */
+
 import java.util.Scanner;
 
-class ab27_LinearFunction {
-	
+public class ab27_LinearFunction {
 	private static int X1,Y1,X2,Y2,A,B;
 	
 	public static int getA(int X1, int Y1, int X2, int Y2) {
@@ -13,6 +22,7 @@ class ab27_LinearFunction {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		int[][] array = new int[size][size];
@@ -33,6 +43,5 @@ class ab27_LinearFunction {
 				System.out.print(" ");
 			}
 		}
-	
 	}
 }

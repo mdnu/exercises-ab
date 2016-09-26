@@ -1,13 +1,21 @@
-/* You will be given several Fibonacci numbers. 
-Your task is to tell their indices in the sequence.*/
+/**
+ * http://www.codeabbey.com/index/task_view/fibonacci-sequence
+ * input data:
+ * 5
+ * 610
+ * 34
+ * 0
+ * 1346269
+ * 10946
+ * answer:
+ * 15 9 0 31 21
+ */
  
 import java.util.Scanner;
 import java.math.*;
 
-class ab26_Fibonacci {
-	
+public class ab26_Fibonacci {
 	public static void main(String[] args) {
-		
 		BigInteger[] Fibonacci = new BigInteger[1000];
 		Fibonacci[0] = BigInteger.ZERO;
 		Fibonacci[1] = BigInteger.ONE;
@@ -16,6 +24,7 @@ class ab26_Fibonacci {
 			Fibonacci[i] = Fibonacci[i - 1].add(Fibonacci[i - 2]);
 		}
 		
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		int[] array = new int[size];
@@ -31,12 +40,9 @@ class ab26_Fibonacci {
 		
 		for (int i = 0; i < size; i++) {
 			System.out.print(array[i]);
-			
 			if (i < size - 1) {
 				System.out.print(" ");
-			}
-			
+			}	
 		}
-
 	}
 }

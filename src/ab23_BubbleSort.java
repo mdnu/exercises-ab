@@ -1,7 +1,15 @@
+/**
+ * http://www.codeabbey.com/index/task_view/bubble-sort
+ * input data:
+ * 8
+ * 3 1 4 1 5 9 2 6
+ * answer:
+ * 5 8
+ */
+
 import java.util.Scanner;
 
-class ab23_BubbleSort {
-	
+public class ab23_BubbleSort {
 	public static int PASS = 0;
 	public static int SWAP = 0;
 	
@@ -30,6 +38,7 @@ class ab23_BubbleSort {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		int[] array = new int[size];
