@@ -1,7 +1,15 @@
+/**
+ * http://www.codeabbey.com/index/task_view/sort-with-indexes
+ * input data:
+ * 4
+ * 50 98 17 79
+ * answer:
+ * 3 1 4 2
+ */
+
 import java.util.Scanner;
 
-class ab29_SortWithIndexes {
-	
+public class ab29_SortWithIndexes {
 	public static int PASS = 0;
 	public static int SWAP = 0;
 	
@@ -16,9 +24,9 @@ class ab29_SortWithIndexes {
 		
 		while (continueSort) {
 			continueSort = false;
-			for (int i = 0; i < size-1; i++) {
-				if (array[i] > array[i+1]) {
-					swap(array, i, i+1);
+			for (int i = 0; i < size - 1; i++) {
+				if (array[i] > array[i + 1]) {
+					swap(array, i, i + 1);
 					SWAP++;
 					continueSort = true;
 				}
@@ -30,6 +38,7 @@ class ab29_SortWithIndexes {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		int[] array = new int[size];
@@ -41,7 +50,6 @@ class ab29_SortWithIndexes {
 		}
 		
 		bubbleSort(array2, size);
-		
 		for (int i = 0; i < size; i++) {
 			for (int j = 0; j < size; j++) {
 				if (array2[i] == array[j]) {
@@ -49,6 +57,5 @@ class ab29_SortWithIndexes {
 				}
 			}
 		}
-		
 	}
 }

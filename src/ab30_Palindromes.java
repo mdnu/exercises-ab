@@ -1,7 +1,17 @@
+/**
+ * http://www.codeabbey.com/index/task_view/palindromes
+ * input data:
+ * 3
+ * Stars
+ * O, a kak Uwakov lil vo kawu kakao!
+ * Some men interpret nine memos
+ * answer:
+ * N Y Y
+ */
+
 import java.util.Scanner;
 
-class ab30_Palindromes {
-	
+public class ab30_Palindromes {
 	public static String regularExpression = "[^A-z]";
 	
 	public static String reverseString(String input) {
@@ -27,6 +37,7 @@ class ab30_Palindromes {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		String[] array = new String[size];
@@ -40,10 +51,9 @@ class ab30_Palindromes {
 		
 		for (int i = 0; i < size; i++) {
 			System.out.print(array[i]);
-			if (i < size-1) {
+			if (i < size - 1) {
 				System.out.print(" ");
 			}
 		}
-		
 	}
 }

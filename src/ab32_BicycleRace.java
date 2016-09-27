@@ -1,8 +1,17 @@
+/**
+ * http://www.codeabbey.com/index/task_view/bicycle-race
+ * input data:
+ * 2
+ * 10 1 1
+ * 20 1 2
+ * answer:
+ * 5 6.66666667
+ */
+
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-class ab32_BicycleRace {
-	
+public class ab32_BicycleRace {
 	public static DecimalFormat DEC = new DecimalFormat("#.########");
 	
 	public static String meetPointDist(double dist, int speedA, int speedB) {
@@ -13,6 +22,7 @@ class ab32_BicycleRace {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		String[] array = new String[size];
@@ -26,10 +36,9 @@ class ab32_BicycleRace {
 		
 		for (int i = 0; i < size; i++) {
 			System.out.print(array[i]);
-			if (i < size-1) {
+			if (i < size - 1) {
 				System.out.print(" ");
 			}
 		}
-		
 	}
 }
