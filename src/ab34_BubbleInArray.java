@@ -1,9 +1,16 @@
+/**
+ * http://www.codeabbey.com/index/task_view/bubble-in-array
+ * input data:
+ * 1 4 3 2 6 5 -1
+ * answer:
+ * 3 5242536
+ */
+
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
-class ab34_BubbleInArray {
-	
+public class ab34_BubbleInArray {
 	public static int SWAP = 0;
 	public static int SIZE = 0;
 	public static long RESULT = 0;
@@ -16,8 +23,6 @@ class ab34_BubbleInArray {
 	}
 	
 	public static void bubbleSort(List<Integer> ARRAY, int SIZE) {
-		boolean continueSort = true;
-			
 		for (int i = 0; i < SIZE; i++) {
 			if (ARRAY.get(i) > ARRAY.get(i + 1)) {
 				SWAP(ARRAY, i, i + 1);
@@ -40,6 +45,7 @@ class ab34_BubbleInArray {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		boolean check = true;
 		while (check) {
@@ -47,11 +53,10 @@ class ab34_BubbleInArray {
 			if (number != -1) {
 				ARRAY.add(number);
 			} else {
-				SIZE = ARRAY.size()-1;
+				SIZE = ARRAY.size() - 1;
 				break;
 			}
 		}
-		
 		bubbleSort(ARRAY, SIZE);
 		long checkSumResult = checkSum(ARRAY);
 		System.out.println(SWAP + " " + checkSumResult);

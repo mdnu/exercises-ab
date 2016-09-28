@@ -1,7 +1,16 @@
+/**
+ * http://www.codeabbey.com/index/task_view/rotate-string
+ * input data:
+ * 2
+ * 3 forwhomthebelltolls
+ * -6 verycomplexnumber
+ * answer:
+ * whomthebelltollsfor numberverycomplex
+ */
+
 import java.util.Scanner;
 
-class ab35_RotateString {
-	
+public class ab35_RotateString {
 	public static char[] rotateString(char[] s, int K) {
 		if ((s == null)||(s.length == 0)) {
 			return s;
@@ -29,6 +38,7 @@ class ab35_RotateString {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		String[] storage = new String[size];
@@ -43,10 +53,9 @@ class ab35_RotateString {
 		
 		for (int i = 0; i < size; i++) {
 			System.out.print(storage[i]);
-			if (i < size-1) {
+			if (i < size - 1) {
 				System.out.print(" ");
 			}
 		}
-		
 	}
 }
