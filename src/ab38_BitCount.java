@@ -1,9 +1,16 @@
+/**
+ * http://www.codeabbey.com/index/task_view/bit-count
+ * input data:
+ * 3
+ * 1 100 -1
+ * answer:
+ * 1 3 32
+ */
+
 import java.util.Scanner;
 
-class ab38_BitCount {
-	
+public class ab38_BitCount {
 	public static String A;
-	
 	public static int BitCount(String A) {
 		int count = 0;
 		for (int i = 0; i < A.length(); i++) {
@@ -15,6 +22,7 @@ class ab38_BitCount {
 	}
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int size = in.nextInt();
 		int[] array = new int[size];

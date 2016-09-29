@@ -1,8 +1,11 @@
+/**
+ * Incomplete.
+ */
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
-class ab40_CaesarShiftCipher {
-	
+public class ab40_CaesarShiftCipher {
 	public static char[] ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
 	public static char[] temp;
 	public static int wordCount;
@@ -20,11 +23,11 @@ class ab40_CaesarShiftCipher {
 			return (temp[j]);
 		}
 	}
-
 	
 	public static void main(String[] args) {
 		ArrayList<Character> charlist = new ArrayList<Character>();
 		ArrayList<String> strlist = new ArrayList<String>();
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		lineCount = in.nextInt();
 		wordCount = in.nextInt();
@@ -40,8 +43,6 @@ class ab40_CaesarShiftCipher {
 		
 		for (int i = 0; i < strlist.size(); i++) {
 			System.out.print(strlist.get(i));
-		}
-		
+		}	
 	}
-	
 }
