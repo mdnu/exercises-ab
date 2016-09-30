@@ -6,6 +6,46 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class ab40_CaesarShiftCipher {
+	private final static char[] ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
+	private static char[] temp;
+	public static int wordCount, lineCount;
+	
+	public static char cipher(int N, int K, char[] temp) {
+		int temp2 = K;
+		if (Character.isAlphabetic(temp[N])) {
+			//temp2 = (temp[j] - 'A') - wordCount;
+			if (temp2 < 0) {
+				temp2 += 26;
+			}
+			return (ALPHABET[temp2 % 26]);
+		} else {
+			return (temp[N]);
+		}
+	}
+	
+	public static void main(String[] args) {
+		ArrayList<Character> charList = new ArrayList<Character>();
+		ArrayList<String> strList = new ArrayList<String>();
+		@SuppressWarnings("resource")
+		Scanner in = new Scanner(System.in);
+		lineCount = in.nextInt();
+		wordCount = in.nextInt();
+		
+		for (int i = 0; i < lineCount; i++) {
+			temp = in.nextLine().toCharArray();
+			for (int j = 0; j < temp.length; j++) {
+				charList.add(cipher(i, j, temp));
+			}
+			System.out.print(charList + " ");
+		}
+	}
+}
+
+/**
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class ab40_CaesarShiftCipher {
 	public static char[] ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
 	public static char[] temp;
 	public static int wordCount;
@@ -46,3 +86,4 @@ public class ab40_CaesarShiftCipher {
 		}	
 	}
 }
+*/
