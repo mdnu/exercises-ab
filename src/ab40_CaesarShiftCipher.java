@@ -7,7 +7,8 @@ import java.util.Scanner;
 public class ab40_CaesarShiftCipher {
 	private final static char[] ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
 	
-	public static char cipher(char c, int temp2, int wordCount) {
+	public static char cipher(char c, int wordCount) {
+		int temp2;
 		if (Character.isAlphabetic(c)) {
 			temp2 = (c - 'A') - wordCount;
 			if (temp2 < 0) {
@@ -30,10 +31,12 @@ public class ab40_CaesarShiftCipher {
 		
 		for (int i = 0; i < lineCount; i++) {
 			temp = in.nextLine().toCharArray();
-			int temp2 = 0;
 			for (int j = 0; j < temp.length; j++) {
-				c = cipher(temp[j], temp2, wordCount);
+				c = cipher(temp[j], wordCount);
 				System.out.print(c);
+				if (j == temp.length - 1) {
+					System.out.print(" ");
+				}
 			}
 		}
 	}
