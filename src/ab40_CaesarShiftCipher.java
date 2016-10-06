@@ -25,17 +25,17 @@ public class ab40_CaesarShiftCipher {
 		Scanner in = new Scanner(System.in);
 		int lineCount = in.nextInt();
 		int wordCount = in.nextInt();
-		char c;
-		char temp[];
+		char[] temp;
 		System.out.println();
 		
-		for (int i = 0; i < lineCount; i++) {
+		for (int i = 0; i < lineCount + 1; i++) {
+			System.out.print("***");
 			temp = in.nextLine().toCharArray();
 			for (int j = 0; j < temp.length; j++) {
-				c = cipher(temp[j], wordCount);
+				char c = cipher(temp[j], wordCount);
 				System.out.print(c);
 				if (j == temp.length - 1) {
-					System.out.print(" ");
+					System.out.print("!!!!!");
 				}
 			}
 		}
