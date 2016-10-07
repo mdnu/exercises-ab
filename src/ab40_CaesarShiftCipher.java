@@ -1,13 +1,18 @@
 /**
- * Incomplete.
+ * http://www.codeabbey.com/index/task_view/caesar-shift-cipher
+ * input data:
+ * 2 3
+ * YHQL YLGL YLFL.
+ * HYHQ BRX EUXWXV.
+ * answer:
+ * VENI VIDI VICI. EVEN YOU BRUTUS.
  */
 
 import java.util.Scanner;
 
 public class ab40_CaesarShiftCipher {
-	private final static char[] ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
-	
 	public static char cipher(char c, int wordCount) {
+		char[] ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
 		int temp2;
 		if (Character.isAlphabetic(c)) {
 			temp2 = (c - 'A') - wordCount;
@@ -29,13 +34,12 @@ public class ab40_CaesarShiftCipher {
 		System.out.println();
 		
 		for (int i = 0; i < lineCount + 1; i++) {
-			System.out.print("***");
 			temp = in.nextLine().toCharArray();
 			for (int j = 0; j < temp.length; j++) {
 				char c = cipher(temp[j], wordCount);
 				System.out.print(c);
 				if (j == temp.length - 1) {
-					System.out.print("!!!!!");
+					System.out.print(" ");
 				}
 			}
 		}
