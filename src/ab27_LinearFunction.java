@@ -11,6 +11,7 @@
 import java.util.Scanner;
 
 public class ab27_LinearFunction {
+	@SuppressWarnings("unused")
 	private static int X1,Y1,X2,Y2,A,B;
 	
 	public static int getA(int X1, int Y1, int X2, int Y2) {
