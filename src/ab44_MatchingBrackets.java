@@ -8,6 +8,12 @@ public class ab44_MatchingBrackets {
 		boolean value = true;
 		for (int i = 0; i < line.length(); i++) {
 			character = line.charAt(i);
+			switch (character) {
+				case '(' : queue.push(character);
+				case '{' : queue.push(character);
+				case '[' : queue.push(character);
+				case '<' : queue.push(character);
+			}
 		}
 		return 0;
 	}
