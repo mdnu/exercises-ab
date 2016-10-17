@@ -3,9 +3,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 public class ab44_MatchingBrackets {
-	private static boolean value;
-	
-	public static void output(String line, Deque<Character> queue) {
+	public static boolean output(String line, Deque<Character> queue, boolean value) {
 		Character character;
 		for (int i = 0; i < line.length(); i++) {
 			character = line.charAt(i);
@@ -18,20 +16,16 @@ public class ab44_MatchingBrackets {
 					} else {
 						switch(character) {
 							case ')': {
-								helper('(', queue);
-								break;
+								return helper('(', queue, value);
 							}
 							case '}': {
-								helper('{', queue);
-								break;
+								return helper('{', queue, value);
 							}
 							case ']': {
-								helper('[', queue);
-								break;
+								return helper('[', queue, value);
 							}
-							case '<': {
-								helper('>', queue);
-								break;
+							case '>': {
+								return helper('<', queue, value);
 							}
 						}
 					}
@@ -40,14 +34,16 @@ public class ab44_MatchingBrackets {
 		if (value) {
 			value = queue.isEmpty();
 		}
+		return value;
 	}
 	
-	private static void helper(char c, Deque<Character> queue) {
+	private static boolean helper(char c, Deque<Character> queue, boolean value) {
 		if (queue.peek() == 'c') {
 			queue.pop();
 		} else {
 			value = false;
 		}
+		return value;
 	}
 	
 	public static void main(String[] args) {
@@ -56,12 +52,12 @@ public class ab44_MatchingBrackets {
 		int size = in.nextInt();
 		char[] array = new char[size];
 		System.out.println();
-		value = true;
 		
 		for (int i = 0; i < size; i++) {
 			Deque<Character> queue = new LinkedList<Character>();
 			String line = in.nextLine();
-			output(line, queue);
+			boolean value = true;
+			value = output(line, queue, value);
 			array[i] = (value ? '1' : '0');
 		}
 		
