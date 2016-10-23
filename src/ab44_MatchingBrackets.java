@@ -51,6 +51,7 @@ public class ab44_MatchingBrackets {
 		if (array.isEmpty() && !deque.isEmpty()) {
 			array.add(1);
 		}
+		System.out.print(array);
 		return array;
 	}
 	
